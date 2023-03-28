@@ -36,3 +36,43 @@ img {
         }
     }
 }
+
+footer {
+    background-color: #303030;
+}
+
+.content {
+    @include margin_app();
+}
+
+.footer-top {
+    @include footer_style();
+    @include flex-center();
+    justify-content: space-between;
+
+    background-image: url(../img/footer-bg.jpg);
+    .footer-content-left {
+        display: flex;
+    }
+    .footer-content-right {
+        background-image: url(../img/dc-logo-bg.png);
+        background-repeat: no-repeat;
+        background-position: right;
+
+        min-width: 40rem;
+        min-height: 20rem;
+    }
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+.icons {
+    @include align_list();
+    padding: 1rem 0;
+}
+button {
+    @include button_hover();
+}

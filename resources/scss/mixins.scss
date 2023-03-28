@@ -27,7 +27,6 @@
 }
 
 @mixin footer_style() {
-    background-image: url(/footer-bg.jpg);
     .title {
         color: $light_color;
         font-weight: bold;

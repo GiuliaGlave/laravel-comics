@@ -15,5 +15,7 @@
 
     @yield('testo')
 
+    @include('partials._footer')
+
 </body>
 </html>

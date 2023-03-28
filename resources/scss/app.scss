@@ -1,4 +1,7 @@
 @import "~bootstrap/scss/bootstrap";
+@import "variables";
+@import "generals";
+@import "mixins";
 
 .jumbotron {
     min-height: 100vh;
@@ -6,4 +9,30 @@
 
 img {
     max-height: 150px;
+}
+
+.top-navbar {
+    background-color: $primary_color;
+    div {
+        color: $light_color;
+    }
+}
+
+.navbar {
+    background-color: $light_color;
+
+    .nav-link:hover {
+        color: $primary_color;
+    }
+
+    ul {
+        font-weight: bold;
+    }
+
+    form {
+        border-bottom: solid $primary_color;
+        input {
+            border: none;
+        }
+    }
 }

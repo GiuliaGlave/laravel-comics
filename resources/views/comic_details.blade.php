@@ -1,10 +1,9 @@
 @extends('layouts.app')
 
 @section('page-name')
-    Homepage
+Comic Details
 @endsection
 
-
 @section('testo')
-    <p>prova testo homepage</p>
+pagina fumetto
 @endsection

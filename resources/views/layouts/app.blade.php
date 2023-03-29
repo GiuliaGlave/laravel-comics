@@ -11,9 +11,8 @@
 <body>
      @include('partials._header')
 
-    <h1>Title</h1>
-
-    @yield('testo')
+     <main> @yield('comic-list')</main>
+   
 
     @include('partials._footer')
 

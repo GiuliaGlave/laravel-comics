@@ -9,11 +9,13 @@
         height: 100%;
         display: flex;
         justify-content: space-between;
+        flex-wrap: nowrap;
         align-items: center;
         gap: 2rem;
-
         li {
-            height: 100%;
+            a {
+                padding: 0;
+            }
         }
     }
 }

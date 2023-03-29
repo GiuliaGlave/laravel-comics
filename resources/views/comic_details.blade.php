@@ -4,6 +4,6 @@
 Comic Details
 @endsection
 
-@section('testo')
+@section('content')
 pagina fumetto
 @endsection

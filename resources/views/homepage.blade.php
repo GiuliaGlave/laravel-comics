@@ -5,6 +5,3 @@
 @endsection
 
 
-@section('testo')
-    <p>prova testo homepage</p>
-@endsection

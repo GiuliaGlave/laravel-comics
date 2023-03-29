@@ -56,7 +56,7 @@
     </div>
     <!-- FOOTER BOTTOM -->
 
-    <div class="footer-bottom content">
+    <div class="footer-bottom content py-5">
       <div class="sign">
         <button>SIGN-UP NOW!</button>
       </div>

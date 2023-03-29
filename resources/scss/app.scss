@@ -3,14 +3,19 @@
 @import "generals";
 @import "mixins";
 
-.jumbotron {
-    min-height: 100vh;
+body {
+    max-height: 100vh;
 }
 
-img {
+.content {
+    @include margin_app();
+}
+
+/* img {
     max-height: 150px;
-}
+} */
 
+/* NAVBAR */
 .top-navbar {
     background-color: $primary_color;
     div {
@@ -20,6 +25,15 @@ img {
 
 .navbar {
     background-color: $light_color;
+    padding: 0;
+
+    .container {
+        height: 100%;
+    }
+
+    .navbar-nav {
+        gap: 1rem;
+    }
 
     .nav-link:hover {
         color: $primary_color;
@@ -27,6 +41,10 @@ img {
 
     ul {
         font-weight: bold;
+        li {
+            height: 100%;
+            @include nav_hover;
+        }
     }
 
     form {
@@ -37,12 +55,71 @@ img {
     }
 }
 
-footer {
-    background-color: #303030;
+/* JUMBOTRON */
+.jumbotron {
+    height: auto;
+    img {
+        object-fit: cover;
+        object-position: top;
+        width: 100%;
+        max-height: 23rem;
+    }
 }
 
-.content {
-    @include margin_app();
+/* CONTENT */
+.comic-list {
+    background-color: $dark_color;
+    padding-bottom: 1rem;
+}
+section {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+span {
+    position: absolute;
+    bottom: 1rem;
+    left: 10rem;
+}
+
+.label,
+button {
+    @include label();
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        width: calc((100% / 6));
+
+        a {
+            color: $light_color;
+            flex-direction: column;
+            display: flex;
+            width: 100%;
+            gap: 1rem;
+            padding: 1rem;
+            .cover {
+                img {
+                    object-fit: cover;
+                    object-position: top;
+                    width: 100%;
+                    aspect-ratio: 1;
+                }
+            }
+            .series {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #303030;
 }
 
 .footer-top {
@@ -53,6 +130,12 @@ footer {
     background-image: url(../img/footer-bg.jpg);
     .footer-content-left {
         display: flex;
+        ul {
+            flex-direction: column;
+            li {
+                width: auto;
+            }
+        }
     }
     .footer-content-right {
         background-image: url(../img/dc-logo-bg.png);
@@ -64,24 +147,13 @@ footer {
     }
 }
 
-.jumbotron {
-    height: auto;
-    img {
-        object-fit: cover;
-        object-position: top;
-        width: 100%;
-        min-height: 23rem;
-    }
-}
-
 .footer-bottom {
     display: flex;
     justify-content: space-between;
-    padding-top: 2rem;
+    align-items: center;
 }
 .icons {
     @include align_list();
-    padding: 1rem 0;
 }
 button {
     @include button_hover();

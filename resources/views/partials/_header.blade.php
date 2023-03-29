@@ -16,14 +16,14 @@
     </div>
 </div>
 
-<nav class="navbar navbar-expand">
+<nav class="navbar navbar-expand my-3">
     <div class="container ">
       <div>
         <a class="navbar-brand" href="#"><img src="{{Vite::asset('../resources/img/dc-logo.png')}}" alt=""></a>
       </div>
 
-      <div class="d-flex">
-        <ul class="navbar-nav" >
+      <div class="nav-menu d-flex">
+        <ul class="navbar-nav flex-nowrap " >
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">CHARACTERS</a>
           </li>

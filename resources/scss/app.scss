@@ -64,6 +64,16 @@ footer {
     }
 }
 
+.jumbotron {
+    height: auto;
+    img {
+        object-fit: cover;
+        object-position: top;
+        width: 100%;
+        min-height: 23rem;
+    }
+}
+
 .footer-bottom {
     display: flex;
     justify-content: space-between;

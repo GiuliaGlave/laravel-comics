@@ -66,8 +66,20 @@
             <input class="form-control me-2 text-end" type="search" placeholder="Search" aria-label="Search">
             <button class="btn " type="submit">&hearts;</button>
           </form>
+
+          
       </div>
+    
     </div>
-  </nav>
+  
+</nav>
+
+  <div class="jumbotron">
+      <img
+      src="{{ Vite::asset ('resources/img/jumbotron.jpg')}}" 
+      alt=""
+      
+    />
+    </div>
 
   

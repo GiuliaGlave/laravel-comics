@@ -67,7 +67,7 @@
           <li>
             <a href="#"
               ><img
-                src="../../img/footer-facebook.png"
+               src="{{ Vite::asset ('resources/img/footer-facebook.png')}}"
                 alt=""
             /></a>
           </li>
@@ -75,7 +75,7 @@
           <li>
             <a href="#"
               ><img
-                src="../../img/footer-twitter.png"
+                src="{{ Vite::asset ('resources/img/footer-twitter.png')}}"
                 alt=""
             /></a>
           </li>
@@ -83,7 +83,7 @@
           <li>
             <a href="#"
               ><img
-                src="../../img/footer-youtube.png"
+                src="{{ Vite::asset ('resources/img/footer-youtube.png')}}"
                 alt=""
             /></a>
           </li>
@@ -91,7 +91,7 @@
           <li>
             <a href="#"
               ><img
-                src="../../img/footer-pinterest.png"
+                 src="{{ Vite::asset ('resources/img/footer-pinterest.png')}}"
                 alt=""
             /></a>
           </li>
@@ -99,7 +99,7 @@
           <li>
             <a href="#"
               ><img
-                src="../../img/footer-periscope.png"
+                src="{{ Vite::asset ('resources/img/footer-periscope.png')}}" 
                 alt=""
             /></a>
           </li>
